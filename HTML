@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jong Jun Lee — Tugas Informatika</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <p class="subject">Tugas Informatika</p>
+    <h1>Website Pribadi</h1>
+    <p class="credentials">Jong Jun Lee · SMA Kolese Kanisius · Kelas 11S7 · Absen 18</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Biodata</h2>
+      <div class="bio">
+        <img src="../images/profile.jpg" alt="Foto Jong Jun Lee" />
+        <table>
+          <tbody>
+            <tr><td>Nama Lengkap</td><td>Jong Jun Lee</td></tr>
+            <tr><td>Kelas</td><td>11S7 — Absen 18</td></tr>
+            <tr><td>Sekolah</td><td>SMA Kolese Kanisius</td></tr>
+            <tr><td>Hobi</td><td>Debating, gym, tidur, makan</td></tr>
+            <tr><td>Cita-cita</td><td>Pengacara kaya atau quant trader</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>Tentang Saya</h2>
+      <p>I used to despise coding and didn't capture its essence in a professional environment. But as I grew, I understood how coding can simplify tasks and its potential within a professional environment. I still don't enjoy learning informatics, but as I slowly pick up its materials, it isn't really as hard as I thought. As I want to try and pursue a career in quantitative finance, I think learning how to program a web is the first step towards the complicated algorithms I'll learn later on.</p>
+    </section>
+
+    <section>
+      <h2>Tabel Nilai Semester 2 Kelas 11</h2>
+      <table class="grades">
+        <thead>
+          <tr><th style="width:60px">No.</th><th>Mata Pelajaran</th><th style="width:90px">Nilai</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Mathematics</td><td>95</td></tr>
+          <tr><td>2</td><td>English</td><td>97</td></tr>
+          <tr><td>3</td><td>Bahasa Indonesia</td><td>94</td></tr>
+          <tr><td>4</td><td>Sociology</td><td>97</td></tr>
+          <tr><td>5</td><td>Advanced History</td><td>98</td></tr>
+          <tr><td>6</td><td>History</td><td>97</td></tr>
+          <tr><td>7</td><td>Civics</td><td>95</td></tr>
+          <tr><td>8</td><td>Economy</td><td>93</td></tr>
+        </tbody>
+      </table>
+
+      <div class="bars">
+        <div class="bar-row"><span class="label">Mathematics</span><div class="bar-track"><div class="bar-fill" data-value="95"></div></div><span class="val">95</span></div>
+        <div class="bar-row"><span class="label">English</span><div class="bar-track"><div class="bar-fill" data-value="97"></div></div><span class="val">97</span></div>
+        <div class="bar-row"><span class="label">Bahasa Indonesia</span><div class="bar-track"><div class="bar-fill" data-value="94"></div></div><span class="val">94</span></div>
+        <div class="bar-row"><span class="label">Sociology</span><div class="bar-track"><div class="bar-fill" data-value="97"></div></div><span class="val">97</span></div>
+        <div class="bar-row"><span class="label">Advanced History</span><div class="bar-track"><div class="bar-fill" data-value="98"></div></div><span class="val">98</span></div>
+        <div class="bar-row"><span class="label">History</span><div class="bar-track"><div class="bar-fill" data-value="97"></div></div><span class="val">97</span></div>
+        <div class="bar-row"><span class="label">Civics</span><div class="bar-track"><div class="bar-fill" data-value="95"></div></div><span class="val">95</span></div>
+        <div class="bar-row"><span class="label">Economy</span><div class="bar-track"><div class="bar-fill" data-value="93"></div></div><span class="val">93</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Proyek Saya</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="thumb"><img src="https://image.thum.io/get/width/800/https://websitekomunitascahaya.netlify.app/" alt="Cahaya Organization" /></div>
+          <div class="body">
+            <h3>Cahaya Organization</h3>
+            <p>Website komunitas mengajar yang menghubungkan calon murid dan tutor dengan organisasi.</p>
+            <button class="btn" data-project="project1.html">Lihat Detail</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"><img src="https://image.thum.io/get/width/800/https://ccmun.id/" alt="CCMUN" /></div>
+          <div class="body">
+            <h3>Canisius College MUN</h3>
+            <p>Kompetisi Model United Nations SMA terbesar di Jakarta dengan sistem pendaftaran online.</p>
+            <button class="btn" data-project="project2.html">Lihat Detail</button>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"><img src="https://image.thum.io/get/width/800/https://studyluiz.netlify.app/" alt="StudyLuiz" /></div>
+          <div class="body">
+            <h3>StudyLuiz</h3>
+            <p>Aplikasi web untuk mengatur tugas berdasarkan prioritas dan tenggat waktu.</p>
+            <button class="btn" data-project="project3.html">Lihat Detail</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Jong Jun Lee · 11S7 / 18 · SMA Kolese Kanisius</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+/* ============ Design tokens ============ */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --ink: #0f1b2d;
+  --ink-soft: #4a5a73;
+  --muted: #7b8aa3;
+  --primary: #1d3a8a;
+  --primary-soft: #2a52be;
+  --accent: #d4a017;
+  --border: #e3e8f0;
+  --shadow: 0 8px 24px rgba(15, 27, 45, 0.06);
+  --radius: 14px;
+  --maxw: 1080px;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+/* ============ Header ============ */
+.site-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
+  color: #fff;
+  padding: 2.2rem 1.25rem;
+  text-align: center;
+  border-bottom: 4px solid var(--accent);
+}
+.site-header h1 {
+  margin: 0 0 .35rem;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  letter-spacing: -.01em;
+}
+.site-header .subject {
+  font-size: 1.05rem;
+  opacity: .95;
+  margin: 0;
+}
+.site-header .credentials {
+  margin: .75rem 0 0;
+  font-size: .92rem;
+  opacity: .9;
+  letter-spacing: .02em;
+}
+
+/* ============ Layout ============ */
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+section h2 {
+  margin: 0 0 1.1rem;
+  font-size: 1.35rem;
+  color: var(--primary);
+  border-left: 4px solid var(--accent);
+  padding-left: .75rem;
+}
+
+/* ============ Biodata ============ */
+.bio {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+.bio img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 3px solid var(--accent);
+}
+.bio table { width: 100%; border-collapse: collapse; }
+.bio td {
+  padding: .55rem .5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: .96rem;
+  vertical-align: top;
+}
+.bio td:first-child {
+  font-weight: 600;
+  color: var(--ink-soft);
+  width: 36%;
+}
+
+/* ============ About ============ */
+.about p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+
+/* ============ Grades ============ */
+table.grades {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+  margin-bottom: 1.25rem;
+}
+table.grades th, table.grades td {
+  padding: .6rem .75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+table.grades thead {
+  background: var(--primary);
+  color: #fff;
+}
+table.grades tbody tr:nth-child(even) { background: #fafbfd; }
+table.grades td:last-child { font-weight: 600; color: var(--primary); }
+
+.bars { display: grid; gap: .55rem; }
+.bar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 48px;
+  align-items: center;
+  gap: .75rem;
+  font-size: .9rem;
+}
+.bar-row .label { color: var(--ink-soft); }
+.bar-track {
+  background: #e9eef7;
+  height: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-soft), var(--accent));
+  border-radius: 999px;
+  width: 0;
+  transition: width 1.1s ease-out;
+}
+.bar-row .val { font-weight: 700; color: var(--primary); text-align: right; }
+
+/* ============ Projects ============ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(15,27,45,.1);
+}
+.project-card .thumb {
+  aspect-ratio: 16/10;
+  background: #eef2f9;
+  overflow: hidden;
+}
+.project-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.project-card .body {
+  padding: 1rem 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.project-card h3 {
+  margin: 0 0 .4rem;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.project-card p {
+  margin: 0 0 1rem;
+  font-size: .9rem;
+  color: var(--ink-soft);
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: .55rem 1.05rem;
+  border-radius: 8px;
+  font-size: .9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background .15s ease;
+}
+.btn:hover { background: var(--primary-soft); text-decoration: none; }
+.btn.secondary { background: var(--accent); color: #1a1a1a; }
+.btn.secondary:hover { background: #b8890f; }
+
+/* ============ Project detail page ============ */
+.detail {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.detail .hero-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border);
+}
+.detail h2 { font-size: 1.6rem; }
+.detail .meta {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  margin-bottom: 1rem;
+}
+.tag {
+  background: #eef2f9;
+  color: var(--primary);
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+.back-row { margin-top: 1.5rem; display: flex; gap: .75rem; flex-wrap: wrap;}
+
+/* ============ Footer ============ */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 780px) {
+  .bio { grid-template-columns: 1fr; }
+  .bio img { max-width: 240px; margin: 0 auto; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 110px 1fr 40px; font-size: .82rem; }
+  section { padding: 1.25rem; }
+}
+
+// Small interactions for the portfolio site
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("%c👋 Welcome to Jong Jun Lee's Informatika portfolio!", "color:#1d3a8a;font-weight:bold;font-size:14px;");
+
+  // Animate grade bars on load
+  const bars = document.querySelectorAll(".bar-fill");
+  bars.forEach((bar) => {
+    const val = parseInt(bar.dataset.value, 10);
+    setTimeout(() => { bar.style.width = val + "%"; }, 150);
+  });
+
+  // Project buttons -> alert + navigate
+  document.querySelectorAll("[data-project]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const target = btn.dataset.project;
+      console.log("Opening project:", target);
+      window.location.href = target;
+    });
+  });
+
+  // Back to home buttons
+  document.querySelectorAll("[data-home]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  });
+
+  // Friendly hello on first project hover
+  let greeted = false;
+  document.querySelectorAll(".project-card").forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      if (!greeted) {
+        console.log("Hovering a project card — click the button to learn more.");
+        greeted = true;
+      }
+    });
+  });
+});
